@@ -182,16 +182,15 @@ tailwind.config = {
   <div class="flex justify-between items-center px-margin-desktop h-full max-w-container-max mx-auto">
     <div class="flex items-center gap-3">
       <img alt="Mas-Wrestling Armenia" class="h-14 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs7gEMnQfMWOziWGUQ-ErOIoT0aJ1um8gTbqqKKZxlCT7PvGQGCkVateV-e-AqmAOwKXIPpmaQJsEzmbU9p3cXQSZG_B39OMwayWBrLQKLJDnYSkUWJoZddogiq5potiMeWRgpSsNZlEJwbReMPNeHykhNIK1gFOhovSh2Ztqxccozw2le88OvAFoZHXXXKawO_HRS4v8UtnsNcbq0EHT_6XDOIlEhGruQn4bVB7JQv5RbBhFD4Hih8rL6D6BNEOGXD8S_7OOiXcvG"/>
-      <span class="hidden lg:block font-display-lg text-title-lg text-white uppercase tracking-tighter" data-i18n="site-title">Mas-Wrestling Armenia</span>
     </div>
     <!-- Desktop Nav -->
     <div class="hidden md:flex items-center space-x-6">
       <a class="nav-link font-label-md text-label-md pb-1" data-page="home" data-i18n-nav="home" data-i18n-nav-en="Home" data-i18n-nav-hy="Գլխավոր">Home</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="about" data-i18n-nav="about" data-i18n-nav-en="About Us" data-i18n-nav-hy="Մեր Մասին">About Us</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="athletes" data-i18n-nav="athletes" data-i18n-nav-en="Athletes" data-i18n-nav-hy="Մարզիկներ">Athletes</a>
-      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
-      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-i18n-nav="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
-      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-i18n-nav="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
+      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
+      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
+      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
     </div>
     <div class="flex items-center gap-4 md:gap-6">
       <!-- Language Switcher -->
@@ -218,9 +217,9 @@ tailwind.config = {
   <a class="nav-link font-label-md text-label-md pb-1" data-page="home" data-i18n-nav="home" data-i18n-nav-en="Home" data-i18n-nav-hy="Գլխավոր">Home</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="about" data-i18n-nav="about" data-i18n-nav-en="About Us" data-i18n-nav-hy="Մեր Մասին">About Us</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="athletes" data-i18n-nav="athletes" data-i18n-nav-en="Athletes" data-i18n-nav-hy="Մարզիկներ">Athletes</a>
-  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
-  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-i18n-nav="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
-  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-i18n-nav="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
+  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
+  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
+  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
 </div>
 
 <!-- ==================== HOME PAGE ==================== -->
@@ -228,11 +227,11 @@ tailwind.config = {
   <!-- Full-screen Hero Section -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-      <div class="w-full h-full bg-center transition-transform duration-[20s] scale-110 bg-surface-container-lowest bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3lvMw7YQCZLfQ2Km_AeRn4OfeHg_qmzRNpNlLWPO5lN0Jts2jQT9fwp7Hb6P7cYqX1lc-vnRgC0RIckqievsJd7JWvMw7ulpJEY9newf_ux3smFXI0P4kSxx16iaSoXhI42fQgEnNYS9adbOg6tVH8Fa-Ji9aQ6u8ewJWLOmYgCUPOtX9MJais6_fFlVCsp3dS5tNK5_E8dimOvL3E8E-1tpFCSA1rpz9pkEySDGJGx5vLlJqxxNS7M5lUnxSUrTj2w0KtYrXGKi9')] bg-cover bg-center"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0764/5852/4845/files/mas-wrestling.gif?v=1779807079" 
+           class="w-full h-full object-cover" alt="Mas-Wrestling Animation"/>
       <div class="absolute inset-0 hero-gradient"></div>
     </div>
     <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center">
-      <img alt="Mas-Wrestling Federation of Armenia Logo" class="w-32 h-32 md:w-44 md:h-44 mb-6 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs7gEMnQfMWOziWGUQ-ErOIoT0aJ1um8gTbqqKKZxlCT7PvGQGCkVateV-e-AqmAOwKXIPpmaQJsEzmbU9p3cXQSZG_B39OMwayWBrLQKLJDnYSkUWJoZddogiq5potiMeWRgpSsNZlEJwbReMPNeHykhNIK1gFOhovSh2Ztqxccozw2le88OvAFoZHXXXKawO_HRS4v8UtnsNcbq0EHT_6XDOIlEhGruQn4bVB7JQv5RbBhFD4Hih8rL6D6BNEOGXD8S_7OOiXcvG"/>
       <div class="space-y-4 mb-8">
         <h1 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-white leading-tight uppercase" data-i18n="hero-title-am">ՀԱՅԱՍՏԱՆԻ ՄԱՍ-ՌԵՍՏԼԻՆԳԻ ՖԵԴԵՐԱՑԻԱ</h1>
         <h2 class="font-display-lg text-headline-md md:text-headline-lg text-primary uppercase tracking-wide" data-i18n="hero-title-en">MAS-WRESTLING FEDERATION OF ARMENIA</h2>
