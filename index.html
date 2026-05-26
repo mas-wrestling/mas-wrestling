@@ -188,7 +188,7 @@ tailwind.config = {
       <a class="nav-link font-label-md text-label-md pb-1" data-page="home" data-i18n-nav="home" data-i18n-nav-en="Home" data-i18n-nav-hy="Գլխավոր">Home</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="about" data-i18n-nav="about" data-i18n-nav-en="About Us" data-i18n-nav-hy="Մեր Մասին">About Us</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="athletes" data-i18n-nav="athletes" data-i18n-nav-en="Athletes" data-i18n-nav-hy="Մարզիկներ">Athletes</a>
-      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
+      <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="news" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
       <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary transition-colors duration-200 pb-1" data-page="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
     </div>
@@ -217,7 +217,7 @@ tailwind.config = {
   <a class="nav-link font-label-md text-label-md pb-1" data-page="home" data-i18n-nav="home" data-i18n-nav-en="Home" data-i18n-nav-hy="Գլխավոր">Home</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="about" data-i18n-nav="about" data-i18n-nav-en="About Us" data-i18n-nav-hy="Մեր Մասին">About Us</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="athletes" data-i18n-nav="athletes" data-i18n-nav-en="Athletes" data-i18n-nav-hy="Մարզիկներ">Athletes</a>
-  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
+  <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="news" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="gallery" data-i18n-nav-en="Gallery" data-i18n-nav-hy="Պատկերասրահ">Gallery</a>
   <a class="nav-link font-label-md text-label-md text-on-surface hover:text-primary pb-1" data-page="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a>
 </div>
@@ -238,8 +238,8 @@ tailwind.config = {
         <p class="font-label-md text-label-md text-primary tracking-[0.3em] uppercase opacity-90 mt-4" data-i18n="hero-founded">Founded: 2011</p>
       </div>
       <div class="flex flex-col md:flex-row gap-4 mt-4">
-        <button class="bg-primary-container text-white px-10 py-4 font-display-lg text-title-lg uppercase metallic-sheen transition-all tracking-wider" data-i18n="hero-btn-history">Our History</button>
-        <button class="border border-white/20 text-white px-10 py-4 font-display-lg text-title-lg uppercase backdrop-blur-sm hover:bg-white/10 transition-all tracking-wider" data-i18n="hero-btn-athletes">View Athletes</button>
+        <button class="bg-primary-container text-white px-10 py-4 font-display-lg text-title-lg uppercase metallic-sheen transition-all tracking-wider nav-link" data-i18n="hero-btn-history" data-page="about">Our History</button>
+        <button class="border border-white/20 text-white px-10 py-4 font-display-lg text-title-lg uppercase backdrop-blur-sm hover:bg-white/10 transition-all tracking-wider nav-link" data-i18n="hero-btn-athletes" data-page="athletes">View Athletes</button>
       </div>
     </div>
     <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
@@ -285,7 +285,7 @@ tailwind.config = {
           <span class="text-primary font-label-md text-label-md uppercase tracking-widest mb-2 block" data-i18n="updates">Updates</span>
           <h2 class="font-display-lg text-headline-lg text-white uppercase leading-none" data-i18n="news-title">News &amp; Media</h2>
         </div>
-        <button class="group flex items-center gap-2 text-white font-label-md text-label-md uppercase hover:text-primary transition-colors" data-i18n="all-news">All News <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></button>
+        <button class="group flex items-center gap-2 text-white font-label-md text-label-md uppercase hover:text-primary transition-colors nav-link" data-i18n="all-news" data-page="news">All News <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></button>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
         <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
@@ -297,7 +297,7 @@ tailwind.config = {
             </div>
             <h4 class="font-display-lg text-title-lg text-white mb-4 line-clamp-2 uppercase" data-i18n="news1-title">European Championships: Armenia Takes Gold</h4>
             <p class="font-body-md text-on-surface-variant mb-6 flex-grow" data-i18n="news1-desc">Our national team demonstrated unparalleled technique and power in the latest continental trials.</p>
-            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="#"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="https://www.mas-wrestling.com/ru/news/23919/" target="_blank"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
           </div>
         </div>
         <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
@@ -309,7 +309,7 @@ tailwind.config = {
             </div>
             <h4 class="font-display-lg text-title-lg text-white mb-4 line-clamp-2 uppercase" data-i18n="news2-title">New Training Facilities in Gyumri and Vanadzor</h4>
             <p class="font-body-md text-on-surface-variant mb-6 flex-grow" data-i18n="news2-desc">Expanding our reach to provide professional coaching to young athletes across all regions.</p>
-            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="#"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="https://gaus.am/ru/about-us/news/mass-wrestling-sport" target="_blank"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
           </div>
         </div>
         <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
@@ -321,7 +321,7 @@ tailwind.config = {
             </div>
             <h4 class="font-display-lg text-title-lg text-white mb-4 line-clamp-2 uppercase" data-i18n="news3-title">2025 Competition Calendar Announced</h4>
             <p class="font-body-md text-on-surface-variant mb-6 flex-grow" data-i18n="news3-desc">Mark your calendars for the upcoming national and regional mas-wrestling events.</p>
-            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="#"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+            <a class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline" href="https://www.edupolice.am/news/view/mar_restling.html" target="_blank"><span data-i18n="read-story">Read Full Story</span> <span class="material-symbols-outlined text-sm">open_in_new</span></a>
           </div>
         </div>
       </div>
@@ -637,6 +637,146 @@ tailwind.config = {
   </div>
 </main>
 
+<!-- ==================== NEWS PAGE ==================== -->
+<main id="page-news" class="page pt-24 pb-20">
+  <div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="mb-16 border-l-4 border-primary-container pl-6">
+      <span class="text-primary font-label-md text-label-md uppercase tracking-widest mb-2 block">Updates</span>
+      <h1 class="font-display-lg text-headline-lg text-white uppercase leading-none">News &amp; Media</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Mas-Wrestling News</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: mas-wrestling.com</p>
+          <a href="https://www.mas-wrestling.com/ru/news/23919/" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Mass Wrestling Sport</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: gaus.am</p>
+          <a href="https://gaus.am/ru/about-us/news/mass-wrestling-sport" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Մաս-Ռեստլինգ</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: edupolice.am</p>
+          <a href="https://www.edupolice.am/news/view/mar_restling.html" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Shant News — Mas-Wrestling</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: shantnews.am</p>
+          <a href="https://www.shantnews.am/news/view/303939.html" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Mas-Wrestling Russia News</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: mas-wrestling.ru</p>
+          <a href="https://www.mas-wrestling.ru/news/01/23920/" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Photo Gallery</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: mas-wrestling.com</p>
+          <a href="https://www.mas-wrestling.com/ru/media/photo/564/7520/" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Press Release</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: mas-wrestling.com</p>
+          <a href="https://www.mas-wrestling.com/ru/press/23909/" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+      <div class="bg-surface-variant border border-outline/10 overflow-hidden flex flex-col group hover:border-primary/40 transition-all">
+        <div class="aspect-video overflow-hidden bg-surface-container-high flex items-center justify-center">
+          <img alt="News" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQwIiBoZWlnaHQ9IjM2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMTcyYzM3Ii8+PC9zdmc+"/>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex items-center justify-between mb-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-md text-label-md uppercase">News</span>
+            <span class="text-on-surface-variant text-label-md">2024</span>
+          </div>
+          <h4 class="font-display-lg text-title-lg text-white mb-4 uppercase">Mas-Wrestlers Pulled the Stick</h4>
+          <p class="font-body-md text-on-surface-variant mb-6 flex-grow">Source: golosarmenii.am</p>
+          <a href="https://golosarmenii.am/mas-restlery-peretyanuli-palku/" target="_blank" rel="noopener" class="text-primary font-label-md text-label-md uppercase flex items-center gap-2 hover:underline">
+            Read Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
 <!-- ==================== FOOTER ==================== -->
 <footer class="relative w-full py-16 bg-surface-container-lowest border-t-4 border-primary-container">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
@@ -661,8 +801,8 @@ tailwind.config = {
         <li><a class="nav-link hover:text-primary transition-colors" data-page="home" data-i18n-nav="home" data-i18n-nav-en="Home" data-i18n-nav-hy="Գլխավոր">Home</a></li>
         <li><a class="nav-link hover:text-primary transition-colors" data-page="about" data-i18n-nav="about" data-i18n-nav-en="About Us" data-i18n-nav-hy="Մեր Մասին">About Us</a></li>
         <li><a class="nav-link hover:text-primary transition-colors" data-page="athletes" data-i18n-nav="athletes" data-i18n-nav-en="Athletes" data-i18n-nav-hy="Մարզիկներ">Athletes</a></li>
-        <li><a class="nav-link hover:text-primary transition-colors" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a></li>
-        <li><a class="nav-link hover:text-primary transition-colors" data-i18n-nav="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a></li>
+        <li><a class="nav-link hover:text-primary transition-colors" data-page="news" data-i18n-nav="news" data-i18n-nav-en="News" data-i18n-nav-hy="Նորություններ">News</a></li>
+        <li><a class="nav-link hover:text-primary transition-colors" data-page="competitions" data-i18n-nav-en="Competitions" data-i18n-nav-hy="Մրցույթներ">Competitions</a></li>
       </ul>
     </div>
     <div>
