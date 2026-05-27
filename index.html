@@ -173,6 +173,25 @@ tailwind.config = {
   border-bottom: 1px solid rgba(255,180,170,0.2);
 }
 .mobile-nav.open { display: flex; }
+
+@media (max-width: 768px) {
+  html[lang="hy"] .font-display-lg,
+  html[lang="hy"] [class*="text-headline"],
+  html[lang="hy"] [class*="text-display"] {
+    font-size: 28px !important;
+    line-height: 34px !important;
+    letter-spacing: 0.01em !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+  }
+
+  html[lang="hy"] .text-title-lg {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+  }
+}
 </style>
 </head>
 <body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-white">
@@ -1120,6 +1139,19 @@ function setLanguage(lang) {
 
   // Update html lang attribute
   document.documentElement.lang = lang === 'hy' ? 'hy' : 'en';
+
+  // Hero section language toggle
+  const heroTitleAm = document.querySelector('[data-i18n="hero-title-am"]');
+  const heroTitleEn = document.querySelector('[data-i18n="hero-title-en"]');
+  if (heroTitleAm && heroTitleEn) {
+    if (lang === 'hy') {
+      heroTitleAm.style.display = 'block';
+      heroTitleEn.style.display = 'none';
+    } else {
+      heroTitleAm.style.display = 'none';
+      heroTitleEn.style.display = 'block';
+    }
+  }
 }
 
 // Language button event listeners
@@ -1223,6 +1255,8 @@ document.querySelectorAll('section > div').forEach(el => {
   el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
   observer.observe(el);
 });
+
+setLanguage('en');
 </script>
 </body>
 </html>
