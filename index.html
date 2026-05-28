@@ -540,19 +540,19 @@ tailwind.config = {
     <div class="w-full md:w-64">
       <label class="block font-label-md text-label-md text-on-surface-variant uppercase mb-2" data-i18n="weight-cat">Weight Category</label>
       <select class="w-full bg-surface-container-high border-2 border-outline/20 text-on-surface p-3 font-label-md focus:border-tertiary outline-none transition-colors">
-        <option data-i18n-opt="all-cats">All Categories</option>
-        <option data-i18n-opt="under70">Under 70kg</option>
-        <option data-i18n-opt="70-90">70kg - 90kg</option>
-        <option data-i18n-opt="90-110">90kg - 110kg</option>
-        <option data-i18n-opt="over110">110kg+</option>
+        <option value="all" data-i18n-opt="all-cats">All Categories</option>
+        <option value="under70" data-i18n-opt="under70">Under 70kg</option>
+        <option value="70-90" data-i18n-opt="70-90">70kg - 90kg</option>
+        <option value="90-110" data-i18n-opt="90-110">90kg - 110kg</option>
+        <option value="over110" data-i18n-opt="over110">110kg+</option>
       </select>
     </div>
     <div class="w-full md:w-64">
       <label class="block font-label-md text-label-md text-on-surface-variant uppercase mb-2" data-i18n="gender">Gender</label>
       <div class="flex border-2 border-outline/20 bg-surface-container-high">
-        <button class="flex-1 py-3 font-label-md bg-primary-container text-on-primary-container" data-i18n-filter="both">Both</button>
-        <button class="flex-1 py-3 font-label-md hover:bg-surface-variant transition-colors" data-i18n-filter="men">Men</button>
-        <button class="flex-1 py-3 font-label-md hover:bg-surface-variant transition-colors" data-i18n-filter="women">Women</button>
+        <button class="flex-1 py-3 font-label-md bg-primary-container text-on-primary-container" data-i18n-filter="both" data-gender-filter="all">Both</button>
+        <button class="flex-1 py-3 font-label-md hover:bg-surface-variant transition-colors" data-i18n-filter="men" data-gender-filter="men">Men</button>
+        <button class="flex-1 py-3 font-label-md hover:bg-surface-variant transition-colors" data-i18n-filter="women" data-gender-filter="women">Women</button>
       </div>
     </div>
     <div class="flex-grow"></div>
@@ -563,7 +563,7 @@ tailwind.config = {
 
   <!-- Athlete Grid -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
-    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300">
+    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300" data-weight="70" data-gender="men">
       <div class="relative overflow-hidden aspect-[3/4]">
         <img alt="Karen Martirosyan" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM0MTU1Ii8+PC9zdmc+"/>
         <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-surface to-transparent">
@@ -590,7 +590,7 @@ tailwind.config = {
       <div class="absolute top-4 right-4 h-8 w-1 bg-tertiary"></div>
     </div>
 
-    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300">
+    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300" data-weight="105" data-gender="men">
       <div class="relative overflow-hidden aspect-[3/4]">
         <img alt="Hovsep Muradyan" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM0MTU1Ii8+PC9zdmc+"/>
         <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-surface to-transparent">
@@ -609,7 +609,7 @@ tailwind.config = {
       <div class="absolute top-4 right-4 h-8 w-1 bg-primary-container"></div>
     </div>
 
-    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300">
+    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300" data-weight="80" data-gender="men">
       <div class="relative overflow-hidden aspect-[3/4]">
         <img alt="Hovhannes Davtyan" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM0MTU1Ii8+PC9zdmc+"/>
         <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-surface to-transparent">
@@ -628,7 +628,7 @@ tailwind.config = {
       <div class="absolute top-4 right-4 h-8 w-1 bg-secondary-container"></div>
     </div>
 
-    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300">
+    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300" data-weight="90" data-gender="men">
       <div class="relative overflow-hidden aspect-[3/4]">
         <img alt="Ashot Hovhannisyan" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM0MTU1Ii8+PC9zdmc+"/>
         <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-surface to-transparent">
@@ -647,7 +647,7 @@ tailwind.config = {
       <div class="absolute top-4 right-4 h-8 w-1 bg-primary"></div>
     </div>
 
-    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300">
+    <div class="athlete-card group relative bg-surface-container-low metallic-border transition-all duration-300" data-weight="65" data-gender="men">
       <div class="relative overflow-hidden aspect-[3/4]">
         <img alt="Yuri Sakunts" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMzM0MTU1Ii8+PC9zdmc+"/>
         <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-surface to-transparent">
@@ -1209,13 +1209,63 @@ document.getElementById('mobile-menu-btn').addEventListener('click', () => {
   document.getElementById('mobile-nav').classList.toggle('open');
 });
 
-// ===== FILTER BUTTONS =====
-document.querySelectorAll('.flex.border-2 button').forEach(btn => {
+// ===== FILTER STATE =====
+let activeWeight = 'all';
+let activeGender = 'all';
+
+function applyFilters() {
+  const cards = document.querySelectorAll('.athlete-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const weight = parseInt(card.getAttribute('data-weight'));
+    const gender = card.getAttribute('data-gender');
+
+    const weightMatch = (() => {
+      if (activeWeight === 'all') return true;
+      if (activeWeight === 'under70') return weight < 70;
+      if (activeWeight === '70-90') return weight >= 70 && weight <= 90;
+      if (activeWeight === '90-110') return weight > 90 && weight <= 110;
+      if (activeWeight === 'over110') return weight > 110;
+      return true;
+    })();
+
+    const genderMatch = activeGender === 'all' || gender === activeGender;
+
+    if (weightMatch && genderMatch) {
+      card.style.display = '';
+      visible++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  const counter = document.querySelector('[data-i18n="showing-medalists"]');
+  if (counter) {
+    const label = currentLang === 'hy'
+      ? `Ցուցադրվում է ${visible} Մարզիկ`
+      : `Showing ${visible} Athlete${visible !== 1 ? 's' : ''}`;
+    counter.textContent = label;
+  }
+}
+
+// Weight select
+const weightSelect = document.querySelector('#page-athletes select');
+if (weightSelect) {
+  weightSelect.addEventListener('change', (e) => {
+    activeWeight = e.target.value;
+    applyFilters();
+  });
+}
+
+// Gender buttons
+document.querySelectorAll('[data-gender-filter]').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.flex.border-2 button').forEach(b => {
+    document.querySelectorAll('[data-gender-filter]').forEach(b => {
       b.classList.remove('bg-primary-container', 'text-on-primary-container');
     });
     btn.classList.add('bg-primary-container', 'text-on-primary-container');
+    activeGender = btn.getAttribute('data-gender-filter');
+    applyFilters();
   });
 });
 
